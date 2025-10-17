@@ -21,7 +21,7 @@ from selenium.common.exceptions import TimeoutException
 
 # --- CẤU HÌNH CỐ ĐỊNH ---
 FIREBASE_URL = "https://bai-test-2ae56-default-rtdb.asia-southeast1.firebasedatabase.app/"
-CHROME_PROFILE_PATH = r"D:\tool_dang_bai\tk" 
+CHROME_PROFILE_PATH = r"D:\Tool_dang_bai_tu_dong\tk" 
 # ----------------------------------------------------
 
 st.set_page_config(page_title="Facebook Posting Tool", layout="wide")
@@ -280,7 +280,6 @@ with tab1:
 with tab2:
     # ... (Phần code trong Tab 2 không thay đổi)
     st.header("👥 Quản lý Tài khoản & Nhóm")
-    st.error("**CẢNH BÁO:** Việc lưu mật khẩu trong Firebase là rất rủi ro. Chỉ dùng nếu bạn chấp nhận rủi ro này.")
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Quản lý tài khoản Facebook")
@@ -356,7 +355,7 @@ with tab3:
     with st.container(border=True):
         st.subheader("🔗 Mở Nhật ký hoạt động")
         st.info("Nhấn nút dưới đây để mở trang 'Nhật ký hoạt động' của bạn trên cửa sổ Chrome đang chạy.")
-        ACTIVITY_LOG_URL = "https://www.facebook.com/me/allactivity?activity_history=false&category_key=GROUPPOSTS"
+        ACTIVITY_LOG_URL = "https://www.facebook.com/61553914266009/allactivity?activity_history=false&category_key=GROUPPOSTS&manage_mode=false&should_load_landing_page=false"
         if st.button("Mở Nhật ký hoạt động trên Facebook", key="btn_open_activity_log"):
             if 'driver' in st.session_state and st.session_state.driver is not None:
                 try:
