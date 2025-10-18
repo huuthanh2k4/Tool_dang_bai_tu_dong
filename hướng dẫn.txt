@@ -1,4 +1,0 @@
-cài python 
-chạy đoạn code "python -m venv .venv" trong terminal
-rồi chạy "pip install -r requirements.txt"
-vào trong a.py lấy đường đường dẫn tuyệt đối của tk

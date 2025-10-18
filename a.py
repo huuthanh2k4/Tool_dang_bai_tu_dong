@@ -21,7 +21,19 @@ from selenium.common.exceptions import TimeoutException
 
 # --- CẤU HÌNH CỐ ĐỊNH ---
 FIREBASE_URL = "https://bai-test-2ae56-default-rtdb.asia-southeast1.firebasedatabase.app/"
-CHROME_PROFILE_PATH = r"D:\Tool_dang_bai_tu_dong\tk" 
+# Tên thư mục
+PATH = "tk"
+
+# Lấy đường dẫn tuyệt đối (tính từ thư mục hiện tại)
+CHROME_PROFILE_PATH = os.path.abspath(PATH)
+
+# Kiểm tra nếu chưa có thì tạo
+if not os.path.exists(CHROME_PROFILE_PATH):
+    os.makedirs(CHROME_PROFILE_PATH)
+    print(f"Đã tạo thư mục profile Chrome: {CHROME_PROFILE_PATH}")
+else:
+    print(f"Thư mục profile Chrome đã tồn tại: {CHROME_PROFILE_PATH}")
+
 # ----------------------------------------------------
 
 st.set_page_config(page_title="Facebook Posting Tool", layout="wide")
