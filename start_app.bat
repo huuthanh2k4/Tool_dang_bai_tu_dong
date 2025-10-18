@@ -1,13 +1,16 @@
 @echo off
+REM Dong lenh quan trong: Tu dong chuyen den thu muc chua file .bat nay
+cd /d "%~dp0"
+
 echo =======================================================
 echo  KHOI DONG CONG CU DANG BAI FACEBOOK - VUI LONG CHO...
 echo =======================================================
+echo.
 
-REM Kich hoat moi truong ao va chay ung dung Streamlit
-call .venv\Scripts\activate && streamlit run a.py
+REM Truc tiep chay ung dung Streamlit bang Python thuong da duoc cai dat tren may
+streamlit run a.py
 
 echo.
 echo Ung dung da duoc khoi dong. Vui long kiem tra trinh duyet.
-echo Cua so nay se tu dong dong sau khi ban tat ung dung.
 
 pause
