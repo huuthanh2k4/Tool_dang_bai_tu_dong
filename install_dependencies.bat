@@ -30,7 +30,6 @@ echo.
 echo ===================================================================
 echo  CAI DAT HOAN TAT!
 echo  Tu bay gio, ban chi can chay file "start_app.bat" de khoi dong.
-echo  Cua so nay se tu dong dong sau 5 giay...
 echo ===================================================================
 echo.
 pause
