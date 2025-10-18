@@ -1,5 +1,5 @@
 @echo off
-REM Dong lenh quan trong: Tu dong chuyen den thu muc chua file .bat nay
+REM Tự động chuyển đến thư mục chứa file .bat này
 cd /d "%~dp0"
 
 echo =======================================================
@@ -7,8 +7,9 @@ echo  KHOI DONG CONG CU DANG BAI FACEBOOK - VUI LONG CHO...
 echo =======================================================
 echo.
 
-REM Truc tiep chay ung dung Streamlit bang Python thuong da duoc cai dat tren may
-streamlit run a.py
+REM Kích hoạt môi trường ảo (chỉ cần gọi python trong .venv là đủ)
+REM Chạy streamlit bằng Python trong môi trường ảo
+.venv\Scripts\python.exe -m streamlit run a.py
 
 echo.
 echo Ung dung da duoc khoi dong. Vui long kiem tra trinh duyet.
